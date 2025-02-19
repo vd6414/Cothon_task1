@@ -1,0 +1,112 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.dashboard-header {
+  background-color: #282c34;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+/*** DASHBOARD START ***/
+#main-interface {
+  display: grid;
+  grid-template-columns: 33% auto 33%;
+  grid-template-rows: .25fr .75fr;
+  height: 30vh;
+}
+
+#topic-input-header {
+  display: inline-block;
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: span 1; 
+  margin-top: 10px;
+}
+
+#topic-input-container {
+  grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: span 2; 
+  padding: 0 20px;
+}
+
+#topic-list-container {
+  padding: 0 30px;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  overflow-y: auto;
+}
+
+#topic-list-header {
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+#topic-list {
+}
+
+.topic {
+  border: 1px solid grey;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.topic:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
+
+.signout {
+  height: 50%;
+  width: 50%;
+  margin: auto;
+}
+
+.auth-modal{
+  height: 300px;
+  width: 300px;
+}
+
+.auth-button {
+  margin: 5px;
+}
+
+/*** DASHBOARD END ***/
+
+/*** AUTH START ***/
+.auth-container {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+/*** CAROUSEL START ***/
+.carousel-img {
+  max-height: 70vh;
+}
+
+.caption-title {
+}
+
+
+/*** CAROUSE END ***/
